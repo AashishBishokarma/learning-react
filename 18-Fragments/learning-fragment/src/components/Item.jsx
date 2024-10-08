@@ -1,9 +1,12 @@
-const Item = (props) => {
-  return(
-    <>
-    <li class="list-group-item">{food}</li>
-    </>
-  )
-}
+import styles from "./Item.module.css"
 
-export default Item ;
+const Item = (props) => {
+
+  return (
+    <>
+      <li className={`${styles["kg-item"]} list-group-item`}><span className={styles["kg-span"]}>{props.foodItem}</span></li>
+    </>
+  );
+};
+
+export default Item;

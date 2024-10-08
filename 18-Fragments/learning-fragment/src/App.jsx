@@ -1,5 +1,7 @@
 import ErrorMessage from "./components/ErrorMessage";
 import FoodItems from "./components/FoodItems";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css"
 
 function App() {
   // let foodItems = [];
@@ -7,10 +9,10 @@ function App() {
   
   return( 
   <>
+  <h1 className="food-heading">Healthy Food</h1>
   
-  <h1>Healthy Food</h1>
-  <ErrorMessage />
-  <FoodItems />
+  <ErrorMessage items={foodItems} ></ErrorMessage>
+  <FoodItems items={foodItems}></FoodItems>
   </>
   )
 }
